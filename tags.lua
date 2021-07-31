@@ -7,8 +7,7 @@ local tagnames = {
     code_tag = "",
     browser_tag = "",
     messenger_tag = "",
-    games_tag = "",
-    another_tag = "6"
+    games_tag = ""
 }
 
 
@@ -18,7 +17,6 @@ local tags = {
     tagnames.browser_tag,
     tagnames.messenger_tag,
     tagnames.games_tag,
-    tagnames.another_tag,
 }
 
 local function init_tags(s)
@@ -55,13 +53,6 @@ local function init_tags(s)
         tagnames.games_tag,
         {
             layout = layouts.fullscreen,
-            screen = s,
-        }
-    )
-    awful.tag.add(
-        tagnames.another_tag,
-        {
-            layout = layouts.tile,
             screen = s,
         }
     )
