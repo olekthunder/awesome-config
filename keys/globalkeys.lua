@@ -272,7 +272,7 @@ local globalkeys =
         {},
         "XF86MonBrightnessDown",
         function()
-            awful.spawn("xbacklight -10", false)
+            awful.spawn("light -U 5", false)
         end,
         {description = "Brightness down", group = "Extra"}
     ),
@@ -280,7 +280,7 @@ local globalkeys =
         {},
         "XF86MonBrightnessUp",
         function()
-            awful.spawn("xbacklight +10", false)
+            awful.spawn("light -A 5", false)
         end,
         {description = "Brightness up", group = "Extra"}
     ),
